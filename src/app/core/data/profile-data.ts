@@ -2,13 +2,14 @@ import { ProfileData } from '../models/profile.model';
 
 export const PROFILE_DATA: ProfileData = {
   name: 'Nguyễn Thành Lộc',
+  avatarUrl: 'assets/avatar.jpg',
   title: 'Backend .NET & AI Systems Engineer',
   tagline: 'Engineering High-Throughput .NET Core Systems & Resilient AI-Augmented Pipelines.',
   statusBadge: 'OPEN TO .NET BACKEND ROLES — DA NANG & HYBRID / REMOTE',
   summary: 'Kỹ sư phần mềm với nền tảng lập trình Hướng đối tượng (OOP) vững chắc khởi đầu từ Java, chuyên sâu kiến trúc backend ASP.NET Core / Spring Boot và tích hợp AI Microservices (RAG). Sở hữu tư duy đa nền tảng linh hoạt từ Web Enterprise, Mobile App (Flutter) đến Game Engineering (Unity C# & GameMaker). Tốt nghiệp ĐH FPT (GPA 3.5/4.0), cựu Backend Intern tại FPT Software Đà Nẵng.',
   aboutMe: 'Final-year Software Engineering student at FPT University (GPA 3.5/4.0) with real-world enterprise internship experience at FPT Software and technical leadership in .NET & AI projects. Solid computer science foundation rooted in Java OOP, expanding across scalable backend systems (ASP.NET Core, Spring Boot), cross-platform mobile development (Flutter - SimSiu), and interactive game systems (Unity C# & GameMaker - Spiritbound). Passionate about high performance, clean architecture, and building production-grade software.',
   contacts: {
-    email: 'locntde180158@fpt.edu.vn',
+    email: 'nguyenthanhloc20092004@gmail.com',
     phone: '+84 334 354 406',
     github: 'https://github.com/Loc20904',
     linkedin: 'https://www.linkedin.com/in/th4nhl0c',

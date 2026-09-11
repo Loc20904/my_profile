@@ -1,5 +1,6 @@
 export interface ProfileData {
   name: string;
+  avatarUrl?: string;
   title: string;
   tagline: string;
   statusBadge: string;

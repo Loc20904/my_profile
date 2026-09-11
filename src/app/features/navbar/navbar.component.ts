@@ -12,8 +12,8 @@ import { ThemeService } from '../../core/services/theme.service';
         
         <!-- Logo / Brand -->
         <a href="#" class="flex items-center gap-2.5 group">
-          <div class="h-8 w-8 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 flex items-center justify-center font-mono font-bold text-xs tracking-wider transition-transform group-hover:scale-105">
-            TL
+          <div class="h-8 w-8 rounded-lg overflow-hidden border border-zinc-200 dark:border-zinc-700/80 bg-zinc-900 text-white flex items-center justify-center font-mono font-bold text-xs tracking-wider transition-transform group-hover:scale-105 shadow-sm">
+            <img src="assets/avatar.jpg" alt="Thành Lộc" class="w-full h-full object-cover object-center" />
           </div>
           <div class="flex flex-col">
             <span class="font-bold text-sm tracking-tight text-zinc-900 dark:text-zinc-100 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">

@@ -79,32 +79,37 @@ import { ProfileData } from '../../core/models/profile.model';
           </div>
         </div>
 
-        <!-- Right: Developer Monogram / Modern Avatar Card -->
+        <!-- Right: Developer Avatar Card -->
         <div class="relative w-full sm:w-auto flex justify-center">
-          <div class="bezel-outer w-48 h-48 sm:w-56 sm:h-56 relative group">
-            <div class="bezel-inner w-full h-full flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-b from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200/80 dark:border-zinc-800">
+          <div class="bezel-outer w-52 h-64 sm:w-60 sm:h-72 relative group">
+            <div class="bezel-inner w-full h-full flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-b from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-950 border border-zinc-200/80 dark:border-zinc-800 p-4">
               
               <!-- Subtle Background Grid Pattern -->
               <div class="absolute inset-0 opacity-10 dark:opacity-20 pointer-events-none bg-[radial-gradient(#8b5cf6_1px,transparent_1px)] [background-size:12px_12px]"></div>
               
-              <!-- Avatar Graphic Placeholder -->
-              <div class="relative z-10 w-20 h-20 rounded-2xl bg-zinc-900 dark:bg-zinc-800 border-2 border-violet-500/40 shadow-xl flex items-center justify-center text-white mb-3 group-hover:scale-105 transition-transform duration-300">
-                <span class="font-mono font-bold text-2xl tracking-tight text-violet-400">NL</span>
-                <span class="absolute -bottom-1.5 -right-1.5 px-1.5 py-0.5 rounded text-[9px] font-mono bg-violet-600 text-white font-semibold">.NET</span>
+              <!-- Avatar Photo -->
+              <div class="relative z-10 w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-2 border-violet-500/40 shadow-xl mb-3 group-hover:scale-105 transition-transform duration-300 bg-zinc-900">
+                <img 
+                  [src]="profile().avatarUrl || 'assets/avatar.jpg'" 
+                  [alt]="profile().name"
+                  class="w-full h-full object-cover object-center"
+                  loading="eager"
+                />
+                <span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded text-[9px] font-mono bg-violet-600 text-white font-semibold shadow">.NET</span>
               </div>
 
               <!-- Name & Title Tag -->
-              <span class="relative z-10 font-bold text-xs tracking-tight text-zinc-900 dark:text-zinc-100">
-                Nguyễn Thành Lộc
+              <span class="relative z-10 font-bold text-sm tracking-tight text-zinc-900 dark:text-zinc-100">
+                {{ profile().name }}
               </span>
-              <span class="relative z-10 text-[10px] font-mono text-zinc-500 dark:text-zinc-400">
-                Backend Engineer
+              <span class="relative z-10 text-[11px] font-mono text-zinc-500 dark:text-zinc-400">
+                Backend .NET & AI Engineer
               </span>
 
               <!-- Live Ping Dot -->
-              <div class="absolute top-3 right-3 flex items-center gap-1">
+              <div class="absolute top-3 right-3 flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-zinc-100/90 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 text-[10px] font-mono text-emerald-600 dark:text-emerald-400 shadow-sm">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping"></span>
-                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                <span>Active</span>
               </div>
             </div>
           </div>
