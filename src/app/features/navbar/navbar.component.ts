@@ -28,7 +28,6 @@ import { ThemeService } from '../../core/services/theme.service';
         <!-- Desktop Navigation Links -->
         <div class="hidden md:flex items-center gap-6 text-xs font-medium text-zinc-600 dark:text-zinc-300">
           <a href="#overview" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Overview</a>
-          <a href="#architecture" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Architecture</a>
           <a href="#case-studies" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Case Studies</a>
           <a href="#tech-stack" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Tech Stack</a>
           <a href="#timeline" class="hover:text-zinc-900 dark:hover:text-white transition-colors">Timeline</a>

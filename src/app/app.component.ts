@@ -4,7 +4,6 @@ import { PROFILE_DATA } from './core/data/profile-data';
 import { NavbarComponent } from './features/navbar/navbar.component';
 import { HeroComponent } from './features/hero/hero.component';
 import { MetricsRibbonComponent } from './features/metrics-ribbon/metrics-ribbon.component';
-import { ArchitecturePlaygroundComponent } from './features/architecture-playground/architecture-playground.component';
 import { CaseStudiesComponent } from './features/case-studies/case-studies.component';
 import { TechRadarComponent } from './features/tech-radar/tech-radar.component';
 import { TimelineComponent } from './features/timeline/timeline.component';
@@ -19,7 +18,6 @@ import { ResumeModalComponent } from './shared/components/resume-modal/resume-mo
     NavbarComponent,
     HeroComponent,
     MetricsRibbonComponent,
-    ArchitecturePlaygroundComponent,
     CaseStudiesComponent,
     TechRadarComponent,
     TimelineComponent,

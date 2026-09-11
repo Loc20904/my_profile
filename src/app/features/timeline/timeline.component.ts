@@ -12,7 +12,7 @@ import { TimelineItem, CertificationItem } from '../../core/models/profile.model
       <!-- Section Header -->
       <div class="mb-10">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-xs font-mono bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 mb-3 border border-zinc-200 dark:border-zinc-700/60">
-          <span>04. CAREER & ACADEMIC MILESTONES</span>
+          <span>03. CAREER & ACADEMIC MILESTONES</span>
         </div>
         <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-zinc-950 dark:text-white">
           Experience & <span class="text-violet-600 dark:text-violet-400">Certifications</span>

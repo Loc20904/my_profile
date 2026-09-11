@@ -36,9 +36,9 @@ import { ProfileData } from '../../core/models/profile.model';
           <div class="flex flex-wrap items-center gap-3.5">
             <!-- Primary CTA -->
             <a 
-              href="#architecture" 
+              href="#case-studies" 
               class="inline-flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold bg-zinc-950 dark:bg-white text-white dark:text-zinc-950 hover:bg-violet-700 dark:hover:bg-zinc-200 transition-all shadow-md group">
-              <span>Explore Architecture Topology</span>
+              <span>Explore Featured Projects</span>
               <svg class="w-4 h-4 transition-transform group-hover:translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
               </svg>
