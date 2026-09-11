@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PROFILE_DATA } from './core/data/profile-data';
 import { NavbarComponent } from './features/navbar/navbar.component';
@@ -8,7 +8,6 @@ import { CaseStudiesComponent } from './features/case-studies/case-studies.compo
 import { TechRadarComponent } from './features/tech-radar/tech-radar.component';
 import { TimelineComponent } from './features/timeline/timeline.component';
 import { FooterComponent } from './features/footer/footer.component';
-import { ResumeModalComponent } from './shared/components/resume-modal/resume-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -21,21 +20,11 @@ import { ResumeModalComponent } from './shared/components/resume-modal/resume-mo
     CaseStudiesComponent,
     TechRadarComponent,
     TimelineComponent,
-    FooterComponent,
-    ResumeModalComponent
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   profileData = PROFILE_DATA;
-  isResumeModalOpen = signal<boolean>(false);
-
-  openResumeModal(): void {
-    this.isResumeModalOpen.set(true);
-  }
-
-  closeResumeModal(): void {
-    this.isResumeModalOpen.set(false);
-  }
 }

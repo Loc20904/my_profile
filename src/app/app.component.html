@@ -5,10 +5,10 @@
   <div class="absolute top-[1200px] -right-40 w-[500px] h-[350px] bg-blue-600/5 dark:bg-blue-600/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
 
   <!-- Navbar -->
-  <app-navbar (openResumeModal)="openResumeModal()" />
+  <app-navbar />
 
   <!-- Hero Section -->
-  <app-hero [profile]="profileData" (openResumeModal)="openResumeModal()" />
+  <app-hero [profile]="profileData" />
 
   <!-- Key Metrics Bento Ribbon -->
   <app-metrics-ribbon [metrics]="profileData.metrics" />
@@ -26,12 +26,6 @@
     [certifications]="profileData.certifications" />
 
   <!-- Footer -->
-  <app-footer [profile]="profileData" (openResumeModal)="openResumeModal()" />
-
-  <!-- Resume Preview & Download Modal -->
-  <app-resume-modal 
-    [isOpen]="isResumeModalOpen()" 
-    [profile]="profileData" 
-    (closeModal)="closeResumeModal()" />
+  <app-footer [profile]="profileData" />
 
 </main>

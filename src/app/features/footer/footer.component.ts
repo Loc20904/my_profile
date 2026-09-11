@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileData } from '../../core/models/profile.model';
 
@@ -31,14 +31,16 @@ import { ProfileData } from '../../core/models/profile.model';
 
           <!-- Direct Resume CTA -->
           <div class="flex items-center gap-3">
-            <button 
-              (click)="openResumeModal.emit()"
+            <a 
+              href="assets/cv/BackEnd_.NET_loc20904.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               class="px-5 py-2.5 rounded-xl text-xs font-semibold bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-violet-700 dark:hover:bg-zinc-200 transition-all shadow flex items-center gap-2">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
               </svg>
-              <span>Download Official Resume</span>
-            </button>
+              <span>View Resume (PDF) ↗</span>
+            </a>
           </div>
         </div>
 
@@ -96,7 +98,6 @@ import { ProfileData } from '../../core/models/profile.model';
 })
 export class FooterComponent {
   profile = input.required<ProfileData>();
-  openResumeModal = output<void>();
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });

@@ -1,4 +1,4 @@
-import { Component, input, output } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileData } from '../../core/models/profile.model';
 
@@ -45,14 +45,16 @@ import { ProfileData } from '../../core/models/profile.model';
             </a>
 
             <!-- Secondary CTA -->
-            <button 
-              (click)="openResumeModal.emit()"
+            <a 
+              href="assets/cv/BackEnd_.NET_loc20904.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold border border-zinc-300 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 hover:border-zinc-400 dark:hover:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800/80 transition-all">
               <svg class="w-4 h-4 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
               </svg>
-              <span>Preview Resume</span>
-            </button>
+              <span>Preview Resume ↗</span>
+            </a>
 
             <!-- Social Links -->
             <div class="flex items-center gap-2 pl-2">
@@ -118,5 +120,4 @@ import { ProfileData } from '../../core/models/profile.model';
 })
 export class HeroComponent {
   profile = input.required<ProfileData>();
-  openResumeModal = output<void>();
 }
