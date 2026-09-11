@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-page: #FBFBFA;
+    --text-primary: #111111;
+    --text-secondary: #66666E;
+    --border-hairline: #E4E4E7;
+  }
+
+  html.dark {
+    --bg-page: #09090B;
+    --text-primary: #F4F4F5;
+    --text-secondary: #A1A1AA;
+    --border-hairline: rgba(255, 255, 255, 0.08);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Custom Utilities for High-End Engineering UI */
+@layer components {
+  .bezel-outer {
+    @apply p-1.5 rounded-2xl border transition-all duration-300;
+  }
+  
+  .dark .bezel-outer {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .bezel-outer {
+    border-color: rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.015);
+  }
+
+  .bezel-inner {
+    @apply rounded-[calc(1rem-2px)] p-6 transition-all duration-300;
+  }
+
+  .dark .bezel-inner {
+    background-color: #121215;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .bezel-inner {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.03);
+  }
+
+  .code-font {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom slim scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 160, 160, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160, 160, 160, 0.45);
+}
