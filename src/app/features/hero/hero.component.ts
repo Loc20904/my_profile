@@ -25,11 +25,7 @@ import { ProfileData } from '../../core/models/profile.model';
 
           <!-- Sub-headline -->
           <p class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-8">
-            Tôi là <strong class="text-zinc-900 dark:text-zinc-100 font-semibold">{{ profile().name }}</strong>, Kỹ sư phần mềm định hướng chuyên sâu vào kiến trúc backend với 
-            <span class="text-zinc-900 dark:text-zinc-200 font-medium">ASP.NET Core</span>, 
-            <span class="text-zinc-900 dark:text-zinc-200 font-medium">Clean Architecture</span> và 
-            <span class="text-zinc-900 dark:text-zinc-200 font-medium">AI Microservices (RAG)</span>. 
-            Tốt nghiệp ĐH FPT (GPA 3.5/4.0), cựu Backend Intern tại FPT Software Đà Nẵng.
+            Tôi là <strong class="text-zinc-900 dark:text-zinc-100 font-semibold">{{ profile().name }}</strong>, {{ profile().summary }}
           </p>
 
           <!-- Action Button Cluster -->

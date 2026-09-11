@@ -5,8 +5,8 @@ export const PROFILE_DATA: ProfileData = {
   title: 'Backend .NET & AI Systems Engineer',
   tagline: 'Engineering High-Throughput .NET Core Systems & Resilient AI-Augmented Pipelines.',
   statusBadge: 'OPEN TO .NET BACKEND ROLES — DA NANG & HYBRID / REMOTE',
-  summary: 'Kỹ sư phần mềm tập trung vào kiến trúc hệ thống backend hướng hiệu năng cao với ASP.NET Core, Clean Architecture và tích hợp AI Microservices (RAG/LLM). Tốt nghiệp ĐH FPT (GPA 3.5/4.0), cựu Backend Intern tại FPT Software Đà Nẵng.',
-  aboutMe: 'Final-year Software Engineering student at FPT University with real-world internship experience at FPT Software and technical leadership in .NET & AI projects. Proficient in ASP.NET Core Web API, FastAPI, C#, Clean Architecture, and enterprise AI integrations. Passionate about building robust, scalable backend systems and delivering high-quality software products.',
+  summary: 'Kỹ sư phần mềm với nền tảng lập trình Hướng đối tượng (OOP) vững chắc khởi đầu từ Java, chuyên sâu kiến trúc backend ASP.NET Core / Spring Boot và tích hợp AI Microservices (RAG). Sở hữu tư duy đa nền tảng linh hoạt từ Web Enterprise, Mobile App (Flutter) đến Game Engineering (Unity C# & GameMaker). Tốt nghiệp ĐH FPT (GPA 3.5/4.0), cựu Backend Intern tại FPT Software Đà Nẵng.',
+  aboutMe: 'Final-year Software Engineering student at FPT University (GPA 3.5/4.0) with real-world enterprise internship experience at FPT Software and technical leadership in .NET & AI projects. Solid computer science foundation rooted in Java OOP, expanding across scalable backend systems (ASP.NET Core, Spring Boot), cross-platform mobile development (Flutter - SimSiu), and interactive game systems (Unity C# & GameMaker - Spiritbound). Passionate about high performance, clean architecture, and building production-grade software.',
   contacts: {
     email: 'locntde180158@fpt.edu.vn',
     phone: '+84 334 354 406',
@@ -162,22 +162,22 @@ export const PROFILE_DATA: ProfileData = {
     {
       id: 'brandhub',
       title: 'BrandHub — AI Brand Intelligence Platform',
-      category: 'AI Microservices & RAG Systems',
+      category: 'Enterprise Microservices & RAG Systems',
       role: 'AI Team Lead',
       period: '06/2026 – Present (Ongoing)',
       tagline: 'Nền tảng phân tích thông tin thương hiệu tự động với RAG và kiểm soát Hallucination chuyên sâu.',
-      overview: 'Lãnh đạo nhóm kỹ sư AI thiết kế và xây dựng hệ thống AI Microservices bằng FastAPI và Python. Phát triển RAG pipeline truy vấn dữ liệu theo ngữ cảnh kết hợp cơ chế kiểm soát ảo giác (hallucination evaluation) và entity resolution.',
+      overview: 'Lãnh đạo nhóm AI thiết kế và xây dựng hệ thống Microservices thông minh. Xây dựng dịch vụ quản lý dữ liệu và xử lý nghiệp vụ với Spring Boot (Java) kết hợp FastAPI (Python) cho pipeline RAG truy vấn dữ liệu ngữ cảnh, đánh giá hallucination và entity resolution.',
       architectureHighlights: [
-        'Xây dựng crawler và data ingestion pipelines tự động thu thập và chuẩn hóa dữ liệu thị trường đa nguồn.',
+        'Phát triển core business services bằng Java & Spring Boot tích hợp với data ingestion crawler tự động thu thập và chuẩn hóa dữ liệu.',
         'Thiết kế pipeline RAG kết hợp Vector Embeddings, Semantic Search và Guardrails đánh giá độ tin cậy kết quả của LLM.',
         'Tách biệt hoàn toàn AI service thành kiến trúc Microservices giao tiếp thông qua RESTful APIs và hàng đợi dữ liệu.'
       ],
       metrics: [
         { label: 'Role', value: 'AI Team Lead' },
-        { label: 'Latency', value: '< 150ms Vector Query' },
+        { label: 'Stack Synergy', value: 'Spring Boot & FastAPI' },
         { label: 'Architecture', value: 'Microservices & RAG' }
       ],
-      techStack: ['Python', 'FastAPI', 'LangChain', 'RAG Pipelines', 'Vector DB', 'Web Crawling', 'Docker'],
+      techStack: ['Java', 'Spring Boot', 'Python', 'FastAPI', 'LangChain', 'RAG Pipelines', 'Vector DB', 'Docker'],
       githubUrl: 'https://github.com/BrandHubOrganization',
       featured: true
     },
@@ -201,6 +201,51 @@ export const PROFILE_DATA: ProfileData = {
       ],
       techStack: ['C#', '.NET 8', 'ASP.NET Core Web API', 'EF Core', 'SQL Server', 'JWT / RBAC', 'RESTful API'],
       githubUrl: 'https://github.com/Loc20904/UniNest',
+      featured: true
+    },
+    {
+      id: 'simsiu',
+      title: 'SimSiu — Cross-Platform Mobile & Backend Ecosystem',
+      category: 'Cross-Platform Mobile & Cloud API',
+      role: 'Full-stack Developer',
+      period: '2025',
+      tagline: 'Ứng dụng di động đa nền tảng Flutter kết nối hệ thống backend ASP.NET Core Web API.',
+      overview: 'Phát triển giải pháp ứng dụng di động toàn diện kết hợp giữa mobile client Flutter và server backend ASP.NET Core Web API. Trực tiếp thiết kế giao diện mượt mà trên cả iOS & Android, đồng thời xây dựng hệ thống API an toàn, tối ưu hóa thời gian phản hồi và quản lý đồng bộ dữ liệu.',
+      architectureHighlights: [
+        'Xây dựng ứng dụng di động với Flutter & Dart, phân tách rõ ràng State Management và Service Layer đảm bảo hiệu năng 60fps.',
+        'Phát triển server backend bằng ASP.NET Core Web API, thiết kế RESTful endpoints tuân thủ Clean Architecture và DTO pattern.',
+        'Tích hợp xác thực bảo mật, xử lý dữ liệu bất đồng bộ và cơ chế local caching giảm thiểu request dư thừa.'
+      ],
+      metrics: [
+        { label: 'Mobile Tech', value: 'Flutter & Dart' },
+        { label: 'Backend API', value: 'ASP.NET Core' },
+        { label: 'Platform', value: 'iOS & Android' }
+      ],
+      techStack: ['Flutter', 'Dart', 'C#', 'ASP.NET Core', 'RESTful API', 'State Management'],
+      githubUrl: 'https://github.com/Loc20904/SimSiu',
+      githubBeUrl: 'https://github.com/Loc20904/SimSiuBE',
+      featured: true
+    },
+    {
+      id: 'spiritbound',
+      title: 'Spiritbound: Rise of the Elements — Action Game',
+      category: 'Game Engineering & OOP Architecture',
+      role: 'Game Developer',
+      period: '2024 – 2025',
+      tagline: 'Tựa game hành động phát triển bằng Unity (C#) và GameMaker với tư duy lập trình hướng đối tượng (OOP) tối ưu hiệu năng.',
+      overview: 'Hiện thực hóa tựa game hành động chiến đấu theo nguyên tố, vận dụng tối đa các nguyên lý Lập trình Hướng đối tượng (OOP) và Design Patterns trong việc thiết kế vòng lặp game loop, hành vi AI kẻ địch và hệ thống tương tác vật lý thời gian thực.',
+      architectureHighlights: [
+        'Vận dụng sâu sắc OOP (Kế thừa, Đa hình, Đóng gói) và các Design Patterns (State Pattern cho Finite State Machine của AI/Nhân vật, Object Pooling cho đạn và VFX).',
+        'Tối ưu hóa vòng lặp Game Loop, xử lý va chạm vật lý (Physics Collision) và tối ưu hóa bộ nhớ tránh Garbage Collection spikes.',
+        'Hiện thực hóa hệ thống điều khiển đa dạng trên Unity (C#) song song với các module cơ chế game thử nghiệm trên GameMaker.'
+      ],
+      metrics: [
+        { label: 'Game Engine', value: 'Unity & GameMaker' },
+        { label: 'Core Language', value: 'C# (OOP Oriented)' },
+        { label: 'Architecture', value: 'FSM & Object Pooling' }
+      ],
+      techStack: ['Unity', 'C#', 'GameMaker', 'Game Physics', 'OOP Architecture', 'State Pattern', 'Object Pooling'],
+      githubUrl: 'https://github.com/Loc20904/Spiritbound-Rise-of-the-Elements',
       featured: true
     },
     {
@@ -252,6 +297,7 @@ export const PROFILE_DATA: ProfileData = {
       items: [
         { name: 'C# / .NET 8 / .NET 9', level: 'Proficient', highlight: true },
         { name: 'ASP.NET Core Web API', level: 'Proficient', highlight: true },
+        { name: 'Java & Spring Boot', level: 'Advanced', highlight: true },
         { name: 'Minimal APIs', level: 'Advanced' },
         { name: 'Python (FastAPI)', level: 'Advanced', highlight: true },
         { name: 'LINQ & Entity Framework Core', level: 'Proficient', highlight: true }
@@ -261,12 +307,23 @@ export const PROFILE_DATA: ProfileData = {
       category: 'Architecture & System Design',
       description: 'Tư duy kiến trúc hệ thống, phân tầng và các design patterns thực tế',
       items: [
+        { name: 'OOP Principles & Design Patterns', level: 'Proficient', highlight: true },
         { name: 'Clean Architecture (Onion)', level: 'Proficient', highlight: true },
         { name: 'CQRS & MediatR', level: 'Advanced', highlight: true },
         { name: 'Repository & Unit of Work', level: 'Proficient' },
         { name: 'Dependency Injection', level: 'Proficient' },
         { name: 'Microservices Communication', level: 'Advanced' },
         { name: 'RESTful API Standards', level: 'Proficient' }
+      ]
+    },
+    {
+      category: 'Mobile & Game Engineering (Multi-Platform)',
+      description: 'Phát triển ứng dụng di động đa nền tảng và kỹ thuật lập trình game tối ưu hóa hiệu năng',
+      items: [
+        { name: 'Flutter & Dart (Cross-Platform)', level: 'Advanced', highlight: true },
+        { name: 'Unity & C# (Game Engineering)', level: 'Advanced', highlight: true },
+        { name: 'GameMaker Studio', level: 'Proficient' },
+        { name: 'Game Physics & Object Pooling', level: 'Advanced' }
       ]
     },
     {
@@ -350,10 +407,10 @@ export const PROFILE_DATA: ProfileData = {
       type: 'education',
       achievements: [
         'Điểm trung bình tích lũy GPA: 3.5 / 4.0 (Tốt nghiệp loại Giỏi).',
-        'Các môn học tiêu biểu: Lập trình Hướng đối tượng (OOP), Cấu trúc Dữ liệu & Giải thuật (DSA), Lập trình .NET Cross-Platform.',
-        'Trưởng nhóm nhiều dự án thực hành công nghệ xuyên suốt quá trình học tập.'
+        'Nền tảng CS & OOP chuyên sâu bắt đầu từ Java, Cấu trúc Dữ liệu & Giải thuật (DSA), Lập trình .NET Cross-Platform và Phát triển Game (Unity/GameMaker).',
+        'Trưởng nhóm nhiều dự án thực hành công nghệ xuyên suốt quá trình học tập (UniNest, BrandHub, SimSiu, Spiritbound).'
       ],
-      badges: ['GPA 3.5/4.0', 'Software Engineering', 'OOP & DSA', '.NET Cross-Platform']
+      badges: ['GPA 3.5/4.0', 'Java & OOP', 'DSA Foundation', '.NET Core', 'Unity & Flutter']
     }
   ],
   certifications: [

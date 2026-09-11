@@ -61,6 +61,7 @@ export interface ProjectCaseStudy {
   metrics: { label: string; value: string }[];
   techStack: string[];
   githubUrl?: string;
+  githubBeUrl?: string;
   featured: boolean;
 }
 
