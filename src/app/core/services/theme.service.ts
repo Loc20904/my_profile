@@ -7,24 +7,37 @@ export class ThemeService {
   isDarkMode = signal<boolean>(true);
 
   constructor() {
-    // Check saved theme or system preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      this.isDarkMode.set(savedTheme === 'dark');
-    } else {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      this.isDarkMode.set(prefersDark);
+    let initialDark = true;
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+          initialDark = savedTheme === 'dark';
+        } else if (window.matchMedia) {
+          initialDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+      }
+    } catch {
+      initialDark = true;
     }
+    this.isDarkMode.set(initialDark);
 
-    // Effect to apply theme changes to DOM
+    // Effect to apply theme changes to DOM safely
     effect(() => {
       const dark = this.isDarkMode();
-      if (dark) {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
+      try {
+        if (typeof document !== 'undefined' && document.documentElement) {
+          if (dark) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        }
+        if (typeof window !== 'undefined' && window.localStorage) {
+          localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }
+      } catch {
+        // Silently handle webview storage restrictions
       }
     });
   }

@@ -8,7 +8,7 @@ import { ThemeService } from '../../core/services/theme.service';
   imports: [CommonModule],
   template: `
     <header class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4 transition-all duration-300">
-      <nav class="w-full max-w-5xl rounded-full border border-black/10 dark:border-white/10 bg-white/75 dark:bg-zinc-950/75 backdrop-blur-md px-5 py-3 shadow-lg shadow-black/5 flex items-center justify-between">
+      <nav class="w-full max-w-5xl rounded-full border border-black/10 dark:border-white/10 bg-white/85 dark:bg-zinc-950/85 backdrop-blur-md transform-gpu px-5 py-3 shadow-lg shadow-black/5 flex items-center justify-between">
         
         <!-- Logo / Brand -->
         <a href="#" class="flex items-center gap-2.5 group">
